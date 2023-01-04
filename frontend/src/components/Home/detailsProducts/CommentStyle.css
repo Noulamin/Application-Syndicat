@@ -1,0 +1,10 @@
+.comment {
+    min-height: 60px;
+    padding: 8px;
+}
+.button {
+    background-color: #fd3d57;
+    padding: 10px 15px;
+    border-radius: 7px;
+    color: white;
+}
