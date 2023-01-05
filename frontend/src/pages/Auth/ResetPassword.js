@@ -12,10 +12,8 @@ const ResetPassword = () => {
     const [formData, setFormData] = useState({ password: '', password2: '' })
     const { password, password2 } = formData
     const [message, setMessage] = useState('')
-
     const [error, setError] = useState(false)
     const [errorPassword, setErrorPassword] = useState(false)
-
     const { token } = useParams()
 
     const onChange = (e) => {
