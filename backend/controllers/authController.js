@@ -5,9 +5,9 @@ exports.signin = (req, res) => {
     const { email, password } = req.body
     User.findOne({ email }, (err, user) => {
         if (err || !user)
-            return res.status(400).json({
-                erreur: 'Not found user with this email'
-            })
+            return res.status(400).send(
+                'Not found user with this email'
+            )
         if (!user.authenticated(password))
             return res.status(401).json({
                 erreur: 'Incorect password'
